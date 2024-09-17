@@ -7,9 +7,7 @@ Challenge 2: Solve the problem for given input [6,5,4,8] - Implement the functio
  * @return {number[]}
  */
 const smallerNumbersThanCurrent = function (nums) {
-    return nums.map(num => {
-        return nums.filter(otherNum => otherNum < num).length;
-    });
+    return nums.map(num => nums.filter(otherNum => otherNum < num).length);
 }
 
 export default smallerNumbersThanCurrent
